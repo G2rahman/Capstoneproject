@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title> Problem 1 </title>
+    </head>
+<body>
+<input id="Mynum"
+value="">
+<p> What number is the biggest </p>
+<button onclick="maxOfThree()">Calculate</button>
+<p id="demo"></p>
+<script>
+ffunction maxOfThree() {
+    let result=
+document.getElementbyId("Mynum").value;
+let [value1, value2, value3] = result.split(',');
+document.getElementById("demo").innerHTML = Math.max(value1, value2, value3);
+}
+</script>
+</body>  
+</html>
